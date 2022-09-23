@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ashnoa.github.io/static/css/main.b72924c3.css",
+    "main.js": "/ashnoa.github.io/static/js/main.014265df.js",
+    "static/js/787.08be310e.chunk.js": "/ashnoa.github.io/static/js/787.08be310e.chunk.js",
+    "index.html": "/ashnoa.github.io/index.html",
+    "main.b72924c3.css.map": "/ashnoa.github.io/static/css/main.b72924c3.css.map",
+    "main.014265df.js.map": "/ashnoa.github.io/static/js/main.014265df.js.map",
+    "787.08be310e.chunk.js.map": "/ashnoa.github.io/static/js/787.08be310e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b72924c3.css",
+    "static/js/main.014265df.js"
+  ]
+}
