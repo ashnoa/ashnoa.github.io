@@ -23,6 +23,10 @@ function Header() {
                     title='Blog'
                     url='https://ashnoa.hatenablog.com/'
                 ></Link>
+                <Link
+                    title='YouTube'
+                    url='https://youtube.com/@ashnoa?si=oJK3FoML3XyhQ5r1'
+                ></Link>
             </div>
         </header>
     );
