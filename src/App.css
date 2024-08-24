@@ -42,7 +42,7 @@
 .App-header-contents {
   display: flex;
   flex-direction: row;
-  gap: 10.0%;
+  gap: 4.0%;
 }
 
 .App-link {
