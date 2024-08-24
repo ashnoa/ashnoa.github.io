@@ -4,6 +4,9 @@
 
 .App-header {
   min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -11,6 +14,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 2.0%;
+  z-index: 20;
 }
 
 .App-header-title {
@@ -73,4 +77,11 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.5rem;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
