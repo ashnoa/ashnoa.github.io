@@ -6,8 +6,8 @@ import Canvas from './Canvas';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
       <Canvas></Canvas>
+      <Header></Header>
       {/* <Section title='🧑🏻‍💻Work experience'></Section>
       <Section title='🛠Skills'></Section>
       <Section title='🎓Education'></Section>
