@@ -6,7 +6,7 @@ type LinkProps = {
   url: string;
 }
 
-function Link(props: LinkProps) {
+function LinkOtherSite(props: LinkProps) {
   return (
     <a
         className="App-link"
@@ -19,4 +19,4 @@ function Link(props: LinkProps) {
   );
 }
 
-export default Link;
+export default LinkOtherSite;

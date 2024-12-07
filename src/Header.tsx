@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Link from './Link';
+import LinkOtherSite from './LinkOtherSite';
 
 function Header() {
     return (
@@ -15,18 +15,18 @@ function Header() {
                 <p className='App-header-address'>
                     asano.hiroki@gmail.com
                 </p>
-                <Link
+                <LinkOtherSite
                     title='Twitter'
                     url='https://twitter.com/ashnoa'
-                ></Link>
-                <Link
+                ></LinkOtherSite>
+                <LinkOtherSite
                     title='Blog'
                     url='https://ashnoa.hatenablog.com/'
-                ></Link>
-                <Link
+                ></LinkOtherSite>
+                <LinkOtherSite
                     title='YouTube'
                     url='https://youtube.com/@ashnoa?si=oJK3FoML3XyhQ5r1'
-                ></Link>
+                ></LinkOtherSite>
             </div>
         </header>
     );
