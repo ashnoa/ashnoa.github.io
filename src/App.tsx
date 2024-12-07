@@ -1,17 +1,24 @@
-import './App.css';
-import Header from './Header';
-import Canvas from './Canvas';
-// import Section from './Section';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import NotFound from "./NotFound";
+import OlelTop from "./OlelTop";
+import OlelPrivacyPolicy from "./OlelPrivacyPolicy";
+import OlelTermsOfUse from "./OlelTermsOfUse";
 
 function App() {
   return (
     <div className="App">
-      <Canvas></Canvas>
-      <Header></Header>
-      {/* <Section title='🧑🏻‍💻Work experience'></Section>
-      <Section title='🛠Skills'></Section>
-      <Section title='🎓Education'></Section>
-      <Section title='📝Articles and Talks'></Section> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/olel" element={<OlelTop />} />
+          <Route path="/olel/privacy-policy" element={<OlelPrivacyPolicy />} />
+          <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

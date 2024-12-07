@@ -10,8 +10,10 @@
     "@types/node": "^16.11.57",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.0.2",
     "react-scripts": "^5.0.1",
     "typescript": "^4.8.2",
     "web-vitals": "^2.1.4"
@@ -43,8 +45,19 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-syntax-import-attributes": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@eslint/js": "^9.16.0",
     "@types/gh-pages": "^3.2.1",
-    "gh-pages": "^6.1.1"
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.13.0",
+    "prettier": "3.4.2",
+    "typescript-eslint": "^8.17.0"
   },
   "homepage": "https://ashnoa.github.io/"
 }
