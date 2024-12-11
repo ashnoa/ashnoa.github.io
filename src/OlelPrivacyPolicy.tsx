@@ -27,6 +27,16 @@ function OlelPrivacyPolicy() {
             <li>お問い合わせ内容</li>
           </ol>
         </li>
+        <li>
+          ユーザーの利用状況解析のために、個人を特定しない形で収集する情報
+          <ol type="1">
+            <li>
+              Google Firebase
+              Analyticsにより収集される情報。取得する情報、利用目的、第三者への提供等の詳細につきましては、Google
+              プライバシーポリシー（https://policies.google.com/privacy?hl=ja）をご確認ください。
+            </li>
+          </ol>
+        </li>
       </ol>
       <h2 id="利用目的">利用目的</h2>
       <p>
