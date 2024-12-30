@@ -171,6 +171,10 @@ function OlelTermsOfUse() {
         </li>
       </ol>
       <p>【2024年12月8日制定】</p>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
