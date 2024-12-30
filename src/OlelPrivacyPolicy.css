@@ -6,4 +6,5 @@
   overflow: auto; /* この要素内だけスクロールを許可 */
   padding: auto;
   max-height: 99vh;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 50px);
 }
