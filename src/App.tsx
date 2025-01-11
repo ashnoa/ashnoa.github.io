@@ -6,6 +6,7 @@ import NotFound from "./NotFound";
 import OlelTop from "./OlelTop";
 import OlelPrivacyPolicy from "./OlelPrivacyPolicy";
 import OlelTermsOfUse from "./OlelTermsOfUse";
+import OlelTermsOfSale from "./OlelTermsOfSale";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/olel" element={<OlelTop />} />
           <Route path="/olel/privacy-policy" element={<OlelPrivacyPolicy />} />
           <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
+          <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
