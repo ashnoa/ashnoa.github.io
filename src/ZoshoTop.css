@@ -1,0 +1,33 @@
+.ZoshoTop-header-title {
+  color: white;
+  font-size: 4rem;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.ZoshoTop-header-image {
+  margin-top: 16px;
+  width: 150px;
+  height: 150px;
+  border-radius: 12px; /* 角を丸くする */
+  object-fit: cover; /* 画像を正方形に収める */
+}
+
+.ZoshoTop-created {
+  color: white;
+}
+
+@media all and (max-width: 480px) {
+  .ZoshoTop-header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .ZoshoTop-header-image {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px; /* 角を丸くする */
+    object-fit: cover; /* 画像を正方形に収める */
+  }
+}

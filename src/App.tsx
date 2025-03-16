@@ -7,6 +7,10 @@ import OlelTop from "./OlelTop";
 import OlelPrivacyPolicy from "./OlelPrivacyPolicy";
 import OlelTermsOfUse from "./OlelTermsOfUse";
 import OlelTermsOfSale from "./OlelTermsOfSale";
+import ZoshoTop from "./ZoshoTop";
+import ZoshoPrivacyPolicy from "./ZoshoPrivacyPolicy";
+import ZoshoTermsOfUse from "./ZoshoTermsOfUse";
+import ZoshoTermsOfSale from "./ZoshoTermsOfSale";
 
 function App() {
   return (
@@ -18,6 +22,13 @@ function App() {
           <Route path="/olel/privacy-policy" element={<OlelPrivacyPolicy />} />
           <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
           <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
+          <Route path="/zosho" element={<ZoshoTop />} />
+          <Route
+            path="/zosho/privacy-policy"
+            element={<ZoshoPrivacyPolicy />}
+          />
+          <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
+          <Route path="/zosho/terms-of-sale" element={<ZoshoTermsOfSale />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
