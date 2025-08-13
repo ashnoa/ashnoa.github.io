@@ -11,6 +11,10 @@ import ZoshoTop from "./ZoshoTop";
 import ZoshoPrivacyPolicy from "./ZoshoPrivacyPolicy";
 import ZoshoTermsOfUse from "./ZoshoTermsOfUse";
 import ZoshoTermsOfSale from "./ZoshoTermsOfSale";
+import OnTapeTop from "./OnTapeTop";
+import OnTapePrivacyPolicy from "./OnTapePrivacyPolicy";
+import OnTapeTermsOfUse from "./OnTapeTermsOfUse";
+import OnTapeTermsOfSale from "./OnTapeTermsOfSale";
 
 function App() {
   return (
@@ -29,6 +33,13 @@ function App() {
           />
           <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
           <Route path="/zosho/terms-of-sale" element={<ZoshoTermsOfSale />} />
+          <Route path="/ontape" element={<OnTapeTop />} />
+          <Route
+            path="/ontape/privacy-policy"
+            element={<OnTapePrivacyPolicy />}
+          />
+          <Route path="/ontape/terms-of-use" element={<OnTapeTermsOfUse />} />
+          <Route path="/ontape/terms-of-sale" element={<OnTapeTermsOfSale />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
