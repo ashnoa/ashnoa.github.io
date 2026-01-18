@@ -15,6 +15,10 @@ import OnTapeTop from "./OnTapeTop";
 import OnTapePrivacyPolicy from "./OnTapePrivacyPolicy";
 import OnTapeTermsOfUse from "./OnTapeTermsOfUse";
 import OnTapeTermsOfSale from "./OnTapeTermsOfSale";
+import CashCrewTop from "./CashCrewTop";
+import CashCrewPrivacyPolicy from "./CashCrewPrivacyPolicy";
+import CashCrewTermsOfUse from "./CashCrewTermsOfUse";
+import CashCrewTermsOfSale from "./CashCrewTermsOfSale";
 
 function App() {
   return (
@@ -40,6 +44,19 @@ function App() {
           />
           <Route path="/ontape/terms-of-use" element={<OnTapeTermsOfUse />} />
           <Route path="/ontape/terms-of-sale" element={<OnTapeTermsOfSale />} />
+          <Route path="/cashcrew" element={<CashCrewTop />} />
+          <Route
+            path="/cashcrew/privacy-policy"
+            element={<CashCrewPrivacyPolicy />}
+          />
+          <Route
+            path="/cashcrew/terms-of-use"
+            element={<CashCrewTermsOfUse />}
+          />
+          <Route
+            path="/cashcrew/terms-of-sale"
+            element={<CashCrewTermsOfSale />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
