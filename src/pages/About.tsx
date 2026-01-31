@@ -35,9 +35,13 @@ function About() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center text-5xl ring-4 ring-background shadow-xl"
+              className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-background shadow-xl"
             >
-              🖊️
+              <img
+                src="/images/ashnoa.JPG"
+                alt="Hiroki Asano"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
             <div>
               <h1 className="text-5xl mb-2 tracking-tight">About Me</h1>

@@ -37,7 +37,7 @@ function AppDetailPage() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="w-28 h-28 rounded-2xl overflow-hidden shadow-lg bg-secondary flex items-center justify-center flex-shrink-0"
+              className="w-28 h-28 rounded-[26%] overflow-hidden shadow-lg bg-secondary flex items-center justify-center flex-shrink-0"
             >
               {isImageIcon ? (
                 <img
@@ -124,8 +124,12 @@ function AppDetailPage() {
               <div className="bg-card rounded-2xl p-6 border border-border">
                 <h3 className="text-lg font-medium mb-4">Developer</h3>
                 <Link to="/" className="flex items-center gap-3 group">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center text-lg">
-                    🖊️
+                  <div className="w-10 h-10 rounded-full overflow-hidden">
+                    <img
+                      src="/images/ashnoa.JPG"
+                      alt="Hiroki Asano"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-medium group-hover:text-primary transition-colors">

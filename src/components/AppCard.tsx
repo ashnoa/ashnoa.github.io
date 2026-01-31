@@ -16,7 +16,7 @@ export function AppCard({ app }: AppCardProps) {
       >
         <div className="relative z-10">
           <div className="flex items-start justify-between mb-4">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center text-3xl overflow-hidden">
+            <div className="w-14 h-14 rounded-[26%] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center text-3xl overflow-hidden">
               {app.icon.startsWith('/') ? (
                 <img src={app.icon} alt={app.name} className="w-full h-full object-cover" />
               ) : (
