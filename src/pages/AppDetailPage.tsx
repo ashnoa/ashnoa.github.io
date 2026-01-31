@@ -1,8 +1,8 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
-import { motion } from 'motion/react';
-import { ArrowLeft, ExternalLink, CheckCircle } from 'lucide-react';
-import { Container } from '../components/Container';
-import { apps } from '../data/apps';
+import { useParams, Link, Navigate } from "react-router-dom";
+import { motion } from "motion/react";
+import { ArrowLeft, ExternalLink, CheckCircle } from "lucide-react";
+import { Container } from "../components/Container";
+import { apps } from "../data/apps";
 
 function AppDetailPage() {
   const { appId } = useParams<{ appId: string }>();
@@ -12,7 +12,7 @@ function AppDetailPage() {
     return <Navigate to="/apps" replace />;
   }
 
-  const isImageIcon = app.icon.startsWith('/');
+  const isImageIcon = app.icon.startsWith("/");
 
   return (
     <div className="min-h-screen pt-32 pb-20">
@@ -51,8 +51,12 @@ function AppDetailPage() {
             </motion.div>
 
             <div className="flex-1">
-              <h1 className="text-4xl md:text-5xl mb-2 tracking-tight">{app.name}</h1>
-              <p className="text-xl text-muted-foreground mb-4">{app.tagline}</p>
+              <h1 className="text-4xl md:text-5xl mb-2 tracking-tight">
+                {app.name}
+              </h1>
+              <p className="text-xl text-muted-foreground mb-4">
+                {app.tagline}
+              </p>
               {app.appStoreUrl && (
                 <a
                   href={app.appStoreUrl}
@@ -74,7 +78,9 @@ function AppDetailPage() {
               {/* About Section */}
               <section>
                 <h2 className="text-2xl mb-4">About</h2>
-                <p className="text-muted-foreground leading-relaxed">{app.description}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {app.description}
+                </p>
               </section>
 
               {/* Features Section */}
@@ -99,7 +105,9 @@ function AppDetailPage() {
               {/* Screenshots Section */}
               <section className="bg-secondary/50 rounded-2xl p-6">
                 <h2 className="text-2xl mb-2">Screenshots</h2>
-                <p className="text-muted-foreground">Screenshots and previews coming soon.</p>
+                <p className="text-muted-foreground">
+                  Screenshots and previews coming soon.
+                </p>
               </section>
             </div>
 
@@ -135,7 +143,9 @@ function AppDetailPage() {
                     <p className="font-medium group-hover:text-primary transition-colors">
                       Hiroki Asano
                     </p>
-                    <p className="text-sm text-muted-foreground">Independent Developer</p>
+                    <p className="text-sm text-muted-foreground">
+                      Software Developer
+                    </p>
                   </div>
                 </Link>
               </div>
