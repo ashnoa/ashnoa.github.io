@@ -38,9 +38,9 @@ export const apps: App[] = [
     description:
       "Your personal book collection manager. Keep track of all your books in one place.",
     features: [
-      "Book catalog management",
-      "Reading progress tracking",
-      "Collection organization",
+      "Book catalog management with NDC",
+      "Easy book registration by barcode reading",
+      "Check your book statistics",
     ],
     tags: ["iOS", "Books", "Utility"],
     privacyPolicyPath: "/zosho/privacy-policy",
