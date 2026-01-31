@@ -1,24 +1,30 @@
-import { motion } from 'motion/react';
-import { Twitter, Mail, MapPin, Youtube, BookOpen } from 'lucide-react';
-import { Container } from '../components/Container';
+import { motion } from "motion/react";
+import { Twitter, Mail, MapPin, Youtube, BookOpen } from "lucide-react";
+import { Container } from "../components/Container";
 
 function About() {
   const skills = [
-    'Swift & SwiftUI',
-    'UIKit',
-    'iOS Development',
-    'Tanka Poetry',
-    'Git',
-    'TypeScript',
-    'React',
+    "Java",
+    "Spring Boot",
+    "Python",
+    "FastAPI",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Vue.js",
+    "Golang",
+    "Swift & SwiftUI",
+    "iOS Development",
+    "Git",
+    "Tanka Poetry",
   ];
 
   const interests = [
-    'Tanka Poetry',
-    'Software Development',
-    'Minimalist Design',
-    'Reading',
-    'Music',
+    "Software Development",
+    "Tanka Poetry",
+    "Minimalist Design",
+    "Reading",
+    "Music",
   ];
 
   return (
@@ -59,17 +65,19 @@ function About() {
             className="space-y-6 mb-16"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Hi, I'm Hiroki Asano, a Tanka poet and software developer based in Japan.
-              I create apps that are simple, intuitive, and built with care.
+              Hi, I'm Hiroki Asano, a Tanka poet and software developer based in
+              Japan. I create apps that are simple, intuitive, and built with
+              care.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As a Tanka poet, I appreciate the beauty of simplicity and express emotions through
-              the traditional Japanese poetic form. This sensibility also influences my approach
-              to software development.
+              As a Tanka poet, I appreciate the beauty of simplicity and express
+              emotions through the traditional Japanese poetic form. This
+              sensibility also influences my approach to software development.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              In my development work, I focus on creating applications that solve real problems
-              while maintaining a clean and elegant user experience.
+              In my development work, I focus on creating applications that
+              solve real problems while maintaining a clean and elegant user
+              experience.
             </p>
           </motion.div>
 
