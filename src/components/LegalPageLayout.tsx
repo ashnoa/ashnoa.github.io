@@ -20,17 +20,7 @@ export function LegalPageLayout({ children, appName, backPath }: LegalPageLayout
           <ArrowLeft className="w-4 h-4" />
           Back to {appName}
         </Link>
-        <article className="prose prose-neutral dark:prose-invert max-w-none
-          prose-headings:font-medium
-          prose-h1:text-2xl prose-h1:mb-8
-          prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-4
-          prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3
-          prose-p:text-base prose-p:leading-relaxed prose-p:mb-4
-          prose-ul:my-4 prose-ul:pl-6
-          prose-ol:my-4 prose-ol:pl-6
-          prose-li:my-1
-          prose-a:text-primary prose-a:underline prose-a:underline-offset-2
-        ">
+        <article className="legal-content max-w-none">
           {children}
         </article>
       </Container>
