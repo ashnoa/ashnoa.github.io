@@ -1,66 +1,89 @@
-import "./App.css";
-import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import NotFound from "./NotFound";
-import OlelTop from "./OlelTop";
+import { ThemeProvider } from "./context/ThemeContext";
+import { Header } from "./components/Header";
+import { ScrollToTop } from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import Apps from "./pages/Apps";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import AppDetailPage from "./pages/AppDetailPage";
 import OlelPrivacyPolicy from "./OlelPrivacyPolicy";
 import OlelTermsOfUse from "./OlelTermsOfUse";
 import OlelTermsOfSale from "./OlelTermsOfSale";
-import ZoshoTop from "./ZoshoTop";
 import ZoshoPrivacyPolicy from "./ZoshoPrivacyPolicy";
 import ZoshoTermsOfUse from "./ZoshoTermsOfUse";
 import ZoshoTermsOfSale from "./ZoshoTermsOfSale";
-import OnTapeTop from "./OnTapeTop";
 import OnTapePrivacyPolicy from "./OnTapePrivacyPolicy";
 import OnTapeTermsOfUse from "./OnTapeTermsOfUse";
 import OnTapeTermsOfSale from "./OnTapeTermsOfSale";
-import CashCrewTop from "./CashCrewTop";
 import CashCrewPrivacyPolicy from "./CashCrewPrivacyPolicy";
 import CashCrewTermsOfUse from "./CashCrewTermsOfUse";
 import CashCrewTermsOfSale from "./CashCrewTermsOfSale";
+import BarnalPrivacyPolicy from "./BarnalPrivacyPolicy";
+import BarnalTermsOfUse from "./BarnalTermsOfUse";
+import BarnalTermsOfSale from "./BarnalTermsOfSale";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/olel" element={<OlelTop />} />
-          <Route path="/olel/privacy-policy" element={<OlelPrivacyPolicy />} />
-          <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
-          <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
-          <Route path="/zosho" element={<ZoshoTop />} />
-          <Route
-            path="/zosho/privacy-policy"
-            element={<ZoshoPrivacyPolicy />}
-          />
-          <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
-          <Route path="/zosho/terms-of-sale" element={<ZoshoTermsOfSale />} />
-          <Route path="/ontape" element={<OnTapeTop />} />
-          <Route
-            path="/ontape/privacy-policy"
-            element={<OnTapePrivacyPolicy />}
-          />
-          <Route path="/ontape/terms-of-use" element={<OnTapeTermsOfUse />} />
-          <Route path="/ontape/terms-of-sale" element={<OnTapeTermsOfSale />} />
-          <Route path="/cashcrew" element={<CashCrewTop />} />
-          <Route
-            path="/cashcrew/privacy-policy"
-            element={<CashCrewPrivacyPolicy />}
-          />
-          <Route
-            path="/cashcrew/terms-of-use"
-            element={<CashCrewTermsOfUse />}
-          />
-          <Route
-            path="/cashcrew/terms-of-sale"
-            element={<CashCrewTermsOfSale />}
-          />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <ScrollToTop />
+        <div className="min-h-screen bg-background text-foreground">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/apps" element={<Apps />} />
+            <Route path="/about" element={<About />} />
+            {/* Legal pages (must be before dynamic :appId route) */}
+            <Route
+              path="/olel/privacy-policy"
+              element={<OlelPrivacyPolicy />}
+            />
+            <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
+            <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
+            <Route
+              path="/zosho/privacy-policy"
+              element={<ZoshoPrivacyPolicy />}
+            />
+            <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
+            <Route path="/zosho/terms-of-sale" element={<ZoshoTermsOfSale />} />
+            <Route
+              path="/ontape/privacy-policy"
+              element={<OnTapePrivacyPolicy />}
+            />
+            <Route path="/ontape/terms-of-use" element={<OnTapeTermsOfUse />} />
+            <Route
+              path="/ontape/terms-of-sale"
+              element={<OnTapeTermsOfSale />}
+            />
+            <Route
+              path="/cashcrew/privacy-policy"
+              element={<CashCrewPrivacyPolicy />}
+            />
+            <Route
+              path="/cashcrew/terms-of-use"
+              element={<CashCrewTermsOfUse />}
+            />
+            <Route
+              path="/cashcrew/terms-of-sale"
+              element={<CashCrewTermsOfSale />}
+            />
+            <Route
+              path="/barnal/privacy-policy"
+              element={<BarnalPrivacyPolicy />}
+            />
+            <Route path="/barnal/terms-of-use" element={<BarnalTermsOfUse />} />
+            <Route
+              path="/barnal/terms-of-sale"
+              element={<BarnalTermsOfSale />}
+            />
+            {/* Dynamic app detail page */}
+            <Route path="/:appId" element={<AppDetailPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
       </Router>
-    </div>
+    </ThemeProvider>
   );
 }
 

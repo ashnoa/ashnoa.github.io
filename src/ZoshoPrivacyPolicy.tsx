@@ -1,9 +1,8 @@
-import "./ZoshoPrivacyPolicy.css";
-import React from "react";
+import { LegalPageLayout } from "./components/LegalPageLayout";
 
 function ZoshoPrivacyPolicy() {
   return (
-    <div className="ZoshoPrivacyPolicy">
+    <LegalPageLayout appName="Zosho" backPath="/zosho">
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「Zosho -
@@ -114,16 +113,7 @@ function ZoshoPrivacyPolicy() {
         当方は、必要に応じて、本ポリシーを変更します。但し、法令上ユーザーの同意が必要となるような本ポリシーの変更を行う場合、変更後の本ポリシーは、当方所定の方法で変更に同意したユーザーに対してのみ適用されるものとします。なお、当方は、本ポリシーを変更する場合には、変更後の本ポリシーの施行時期及び内容を当方のウェブサイト上での表示その他の適切な方法により周知し、またはユーザーに通知します。
       </p>
       <p>【2025年3月31日制定】</p>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+    </LegalPageLayout>
   );
 }
 

@@ -1,9 +1,8 @@
-import "./OnTapeTermsOfSale.css";
-import React from "react";
+import { LegalPageLayout } from "./components/LegalPageLayout";
 
 function OnTapeTermsOfSale() {
   return (
-    <div className="OnTapeTermsOfSale">
+    <LegalPageLayout appName="OnTape" backPath="/ontape">
       <h1 id="特定商取引法に基づく表示">特定商取引法に基づく表示</h1>
       <h2 id="名称">名称</h2>
       <p>浅野 大輝（Hiroki Asano）</p>
@@ -48,16 +47,7 @@ function OnTapeTermsOfSale() {
       <p>
         本サービスは、特定商取引法に規定されるクーリングオフが適用されるサービスではありません。
       </p>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+    </LegalPageLayout>
   );
 }
 
