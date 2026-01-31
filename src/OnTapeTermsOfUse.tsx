@@ -1,9 +1,8 @@
-import "./OnTapeTermsOfUse.css";
-import React from "react";
+import { LegalPageLayout } from "./components/LegalPageLayout";
 
 function OnTapeTermsOfUse() {
   return (
-    <div className="OnTapeTermsOfUse">
+    <LegalPageLayout appName="OnTape" backPath="/ontape">
       <h1 id="利用規約">利用規約</h1>
       <p>
         本利用規約（以下「本規約」と言います。）には、本サービスの提供条件及び本サービス開発者であるHiroki
@@ -193,16 +192,7 @@ function OnTapeTermsOfUse() {
         </li>
       </ol>
       <p>【2025年8月15日制定】</p>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+    </LegalPageLayout>
   );
 }
 

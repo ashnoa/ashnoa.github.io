@@ -1,0 +1,10 @@
+{
+  "short_name": "ashnoa.github.io",
+  "name": "ashnoa.github.io",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
