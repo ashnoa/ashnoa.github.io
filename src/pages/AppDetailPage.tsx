@@ -1,12 +1,14 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "motion/react";
-import { ArrowLeft, ExternalLink, CheckCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import { Container } from "../components/Container";
 import { apps } from "../data/apps";
+import { useTheme } from "../context/ThemeContext";
 
 function AppDetailPage() {
   const { appId } = useParams<{ appId: string }>();
   const app = apps.find((a) => a.id === appId);
+  const { resolvedTheme } = useTheme();
 
   if (!app) {
     return <Navigate to="/apps" replace />;
@@ -62,10 +64,13 @@ function AppDetailPage() {
                   href={app.appStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
+                  className="inline-block hover:opacity-80 transition-opacity"
                 >
-                  View on App Store
-                  <ExternalLink className="w-4 h-4" />
+                  <img
+                    src={resolvedTheme === 'light' ? '/images/appstore_black.svg' : '/images/appstore_white.svg'}
+                    alt="Download on the App Store"
+                    className="h-10"
+                  />
                 </a>
               )}
             </div>
