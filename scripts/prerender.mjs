@@ -3,37 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer";
+import { allRoutes } from "./routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, "../dist");
-
-const routes = [
-  "/",
-  "/apps",
-  "/about",
-  "/olel",
-  "/olel/privacy-policy",
-  "/olel/terms-of-use",
-  "/olel/terms-of-sale",
-  "/zosho",
-  "/zosho/privacy-policy",
-  "/zosho/terms-of-use",
-  "/zosho/terms-of-sale",
-  "/ontape",
-  "/ontape/privacy-policy",
-  "/ontape/terms-of-use",
-  "/ontape/terms-of-sale",
-  "/cashcrew",
-  "/cashcrew/privacy-policy",
-  "/cashcrew/terms-of-use",
-  "/cashcrew/terms-of-sale",
-  "/barnal",
-  "/barnal/privacy-policy",
-  "/barnal/terms-of-use",
-  "/barnal/terms-of-sale",
-];
-
-const PORT = 4173;
 
 const MIME_TYPES = {
   ".html": "text/html",
@@ -54,7 +27,8 @@ const MIME_TYPES = {
 function startServer() {
   return new Promise((resolve) => {
     const server = http.createServer((req, res) => {
-      const url = new URL(req.url, `http://localhost:${PORT}`);
+      const port = server.address().port;
+      const url = new URL(req.url, `http://localhost:${port}`);
       let filePath = path.join(distDir, url.pathname);
 
       // Try exact file, then index.html in directory, then fallback to root index.html (SPA)
@@ -80,7 +54,8 @@ function startServer() {
       }
     });
 
-    server.listen(PORT, () => {
+    // Use port 0 to let the OS assign an available port
+    server.listen(0, () => {
       resolve(server);
     });
   });
@@ -89,12 +64,14 @@ function startServer() {
 async function prerender() {
   console.log("Starting local server...");
   const server = await startServer();
+  const port = server.address().port;
+  console.log(`Server listening on port ${port}`);
 
   console.log("Launching browser...");
   const browser = await puppeteer.launch({ headless: true });
 
   try {
-    for (const route of routes) {
+    for (const route of allRoutes) {
       console.log(`Prerendering: ${route}`);
       const page = await browser.newPage();
       // Block external requests (fonts, analytics) to speed up prerendering
@@ -102,7 +79,7 @@ async function prerender() {
       page.on("request", (req) => {
         const url = req.url();
         if (
-          url.startsWith(`http://localhost:${PORT}`) ||
+          url.startsWith(`http://localhost:${port}`) ||
           url.startsWith("data:")
         ) {
           req.continue();
@@ -111,7 +88,7 @@ async function prerender() {
         }
       });
 
-      await page.goto(`http://localhost:${PORT}${route}`, {
+      await page.goto(`http://localhost:${port}${route}`, {
         waitUntil: "networkidle0",
         timeout: 30000,
       });

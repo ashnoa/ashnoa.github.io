@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { appIds } from "./routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, "../dist");
@@ -12,28 +13,16 @@ const routes = [
   { path: "/apps", priority: "0.8", changefreq: "monthly" },
   { path: "/about", priority: "0.6", changefreq: "monthly" },
   // App detail pages
-  { path: "/olel", priority: "0.7", changefreq: "monthly" },
-  { path: "/zosho", priority: "0.7", changefreq: "monthly" },
-  { path: "/ontape", priority: "0.7", changefreq: "monthly" },
-  { path: "/cashcrew", priority: "0.7", changefreq: "monthly" },
-  { path: "/barnal", priority: "0.7", changefreq: "monthly" },
+  ...appIds.map((id) => ({
+    path: `/${id}`,
+    priority: "0.7",
+    changefreq: "monthly",
+  })),
   // Legal pages
-  ...["olel", "zosho", "ontape", "cashcrew", "barnal"].flatMap((app) => [
-    {
-      path: `/${app}/privacy-policy`,
-      priority: "0.3",
-      changefreq: "yearly",
-    },
-    {
-      path: `/${app}/terms-of-use`,
-      priority: "0.3",
-      changefreq: "yearly",
-    },
-    {
-      path: `/${app}/terms-of-sale`,
-      priority: "0.3",
-      changefreq: "yearly",
-    },
+  ...appIds.flatMap((id) => [
+    { path: `/${id}/privacy-policy`, priority: "0.3", changefreq: "yearly" },
+    { path: `/${id}/terms-of-use`, priority: "0.3", changefreq: "yearly" },
+    { path: `/${id}/terms-of-sale`, priority: "0.3", changefreq: "yearly" },
   ]),
 ];
 

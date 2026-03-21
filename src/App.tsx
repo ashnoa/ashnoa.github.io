@@ -29,61 +29,70 @@ function App() {
     <HelmetProvider>
       <ThemeProvider>
         <Router>
-        <ScrollToTop />
-        <div className="min-h-screen bg-background text-foreground">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/apps" element={<Apps />} />
-            <Route path="/about" element={<About />} />
-            {/* Legal pages (must be before dynamic :appId route) */}
-            <Route
-              path="/olel/privacy-policy"
-              element={<OlelPrivacyPolicy />}
-            />
-            <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
-            <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
-            <Route
-              path="/zosho/privacy-policy"
-              element={<ZoshoPrivacyPolicy />}
-            />
-            <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
-            <Route path="/zosho/terms-of-sale" element={<ZoshoTermsOfSale />} />
-            <Route
-              path="/ontape/privacy-policy"
-              element={<OnTapePrivacyPolicy />}
-            />
-            <Route path="/ontape/terms-of-use" element={<OnTapeTermsOfUse />} />
-            <Route
-              path="/ontape/terms-of-sale"
-              element={<OnTapeTermsOfSale />}
-            />
-            <Route
-              path="/cashcrew/privacy-policy"
-              element={<CashCrewPrivacyPolicy />}
-            />
-            <Route
-              path="/cashcrew/terms-of-use"
-              element={<CashCrewTermsOfUse />}
-            />
-            <Route
-              path="/cashcrew/terms-of-sale"
-              element={<CashCrewTermsOfSale />}
-            />
-            <Route
-              path="/barnal/privacy-policy"
-              element={<BarnalPrivacyPolicy />}
-            />
-            <Route path="/barnal/terms-of-use" element={<BarnalTermsOfUse />} />
-            <Route
-              path="/barnal/terms-of-sale"
-              element={<BarnalTermsOfSale />}
-            />
-            {/* Dynamic app detail page */}
-            <Route path="/:appId" element={<AppDetailPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+          <ScrollToTop />
+          <div className="min-h-screen bg-background text-foreground">
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/apps" element={<Apps />} />
+              <Route path="/about" element={<About />} />
+              {/* Legal pages (must be before dynamic :appId route) */}
+              <Route
+                path="/olel/privacy-policy"
+                element={<OlelPrivacyPolicy />}
+              />
+              <Route path="/olel/terms-of-use" element={<OlelTermsOfUse />} />
+              <Route path="/olel/terms-of-sale" element={<OlelTermsOfSale />} />
+              <Route
+                path="/zosho/privacy-policy"
+                element={<ZoshoPrivacyPolicy />}
+              />
+              <Route path="/zosho/terms-of-use" element={<ZoshoTermsOfUse />} />
+              <Route
+                path="/zosho/terms-of-sale"
+                element={<ZoshoTermsOfSale />}
+              />
+              <Route
+                path="/ontape/privacy-policy"
+                element={<OnTapePrivacyPolicy />}
+              />
+              <Route
+                path="/ontape/terms-of-use"
+                element={<OnTapeTermsOfUse />}
+              />
+              <Route
+                path="/ontape/terms-of-sale"
+                element={<OnTapeTermsOfSale />}
+              />
+              <Route
+                path="/cashcrew/privacy-policy"
+                element={<CashCrewPrivacyPolicy />}
+              />
+              <Route
+                path="/cashcrew/terms-of-use"
+                element={<CashCrewTermsOfUse />}
+              />
+              <Route
+                path="/cashcrew/terms-of-sale"
+                element={<CashCrewTermsOfSale />}
+              />
+              <Route
+                path="/barnal/privacy-policy"
+                element={<BarnalPrivacyPolicy />}
+              />
+              <Route
+                path="/barnal/terms-of-use"
+                element={<BarnalTermsOfUse />}
+              />
+              <Route
+                path="/barnal/terms-of-sale"
+                element={<BarnalTermsOfSale />}
+              />
+              {/* Dynamic app detail page */}
+              <Route path="/:appId" element={<AppDetailPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
         </Router>
       </ThemeProvider>
     </HelmetProvider>
