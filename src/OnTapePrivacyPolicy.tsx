@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function OnTapePrivacyPolicy() {
   return (
     <LegalPageLayout appName="OnTape" backPath="/ontape">
+      <SEOHead
+        title="Privacy Policy - OnTape"
+        description="Privacy Policy for OnTape."
+        path="/ontape/privacy-policy"
+      />
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「OnTape -

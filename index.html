@@ -9,12 +9,37 @@
       name="description"
       content="Hiroki Asano is a Tanka Poet / Software Developer."
     />
+    <meta property="og:title" content="ashnoa.com" />
+    <meta property="og:description" content="Hiroki Asano is a Tanka Poet / Software Developer." />
+    <meta property="og:url" content="https://ashnoa.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ashnoa.com/images/ashnoa.JPG" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ashnoa.com" />
+    <meta name="twitter:description" content="Hiroki Asano is a Tanka Poet / Software Developer." />
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
     <title>ashnoa.com</title>
+    <script>
+      // Redirect hash-based URLs to clean URLs (e.g. /#/olel → /olel)
+      (function() {
+        var hash = window.location.hash;
+        if (hash && hash.startsWith('#/')) {
+          window.history.replaceState(null, '', hash.substring(1));
+        }
+      })();
+      // Restore path from GitHub Pages 404 redirect
+      (function() {
+        var redirect = sessionStorage.getItem('gh-pages-redirect');
+        if (redirect) {
+          sessionStorage.removeItem('gh-pages-redirect');
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

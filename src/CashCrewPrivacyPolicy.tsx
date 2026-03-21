@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function CashCrewPrivacyPolicy() {
   return (
     <LegalPageLayout appName="CashCrew" backPath="/cashcrew">
+      <SEOHead
+        title="Privacy Policy - CashCrew"
+        description="Privacy Policy for CashCrew."
+        path="/cashcrew/privacy-policy"
+      />
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「CashCrew -

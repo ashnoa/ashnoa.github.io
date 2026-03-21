@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function ZoshoTermsOfUse() {
   return (
     <LegalPageLayout appName="Zosho" backPath="/zosho">
+      <SEOHead
+        title="Terms of Use - Zosho"
+        description="Terms of Use for Zosho."
+        path="/zosho/terms-of-use"
+      />
       <h1 id="利用規約">利用規約</h1>
       <p>
         本利用規約（以下「本規約」と言います。）には、本サービスの提供条件及び本サービス開発者であるHiroki
