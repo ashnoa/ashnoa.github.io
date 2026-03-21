@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import { Container } from "../components/Container";
+import { SEOHead } from "../components/SEOHead";
 import { apps } from "../data/apps";
 import { useTheme } from "../context/ThemeContext";
 
@@ -16,8 +17,29 @@ function AppDetailPage() {
 
   const isImageIcon = app.icon.startsWith("/");
 
+  const operatingSystem = app.tags.includes("macOS") ? "macOS" : "iOS";
+
   return (
     <div className="min-h-screen pt-32 pb-20">
+      <SEOHead
+        title={`${app.name} - ${app.tagline}`}
+        description={app.description}
+        path={`/${app.id}`}
+        ogImage={app.icon}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: app.name,
+          description: app.description,
+          operatingSystem,
+          applicationCategory: app.tags.filter((t) => t !== "iOS" && t !== "macOS").join(", "),
+          author: {
+            "@type": "Person",
+            name: "Hiroki Asano",
+            url: "https://ashnoa.com",
+          },
+        }}
+      />
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

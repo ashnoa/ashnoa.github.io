@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Twitter, Mail, MapPin, Youtube, BookOpen } from "lucide-react";
 import { Container } from "../components/Container";
+import { SEOHead } from "../components/SEOHead";
 
 function About() {
   const skills = [
@@ -29,6 +30,12 @@ function About() {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
+      <SEOHead
+        title="About"
+        description="Hiroki Asano, a Tanka poet and software developer based in Japan. Creating simple, intuitive apps with care."
+        path="/about"
+        ogImage="/images/ashnoa.JPG"
+      />
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

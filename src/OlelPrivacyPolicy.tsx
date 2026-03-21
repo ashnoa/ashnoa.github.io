@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function OlelPrivacyPolicy() {
   return (
     <LegalPageLayout appName="olel" backPath="/olel">
+      <SEOHead
+        title="Privacy Policy - olel"
+        description="Privacy Policy for olel."
+        path="/olel/privacy-policy"
+      />
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「olel -

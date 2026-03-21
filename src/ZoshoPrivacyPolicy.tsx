@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function ZoshoPrivacyPolicy() {
   return (
     <LegalPageLayout appName="Zosho" backPath="/zosho">
+      <SEOHead
+        title="Privacy Policy - Zosho"
+        description="Privacy Policy for Zosho."
+        path="/zosho/privacy-policy"
+      />
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「Zosho -

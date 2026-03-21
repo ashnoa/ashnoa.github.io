@@ -2,10 +2,16 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Container } from '../components/Container';
+import { SEOHead } from '../components/SEOHead';
 
 function NotFound() {
   return (
     <div className="min-h-screen pt-32 pb-20 flex items-center">
+      <SEOHead
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist."
+        path="/404"
+      />
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

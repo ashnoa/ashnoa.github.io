@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function OnTapeTermsOfSale() {
   return (
     <LegalPageLayout appName="OnTape" backPath="/ontape">
+      <SEOHead
+        title="Terms of Sale - OnTape"
+        description="Terms of Sale for OnTape."
+        path="/ontape/terms-of-sale"
+      />
       <h1 id="特定商取引法に基づく表示">特定商取引法に基づく表示</h1>
       <h2 id="名称">名称</h2>
       <p>浅野 大輝（Hiroki Asano）</p>

@@ -2,10 +2,16 @@ import { motion } from 'motion/react';
 import { Container } from '../components/Container';
 import { AppCard } from '../components/AppCard';
 import { apps } from '../data/apps';
+import { SEOHead } from '../components/SEOHead';
 
 function Apps() {
   return (
     <div className="min-h-screen pt-32 pb-20">
+      <SEOHead
+        title="Apps"
+        description="A collection of carefully crafted applications designed to enhance your workflow and spark creativity."
+        path="/apps"
+      />
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

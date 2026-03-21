@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function BarnalTermsOfSale() {
   return (
     <LegalPageLayout appName="Barnal" backPath="/barnal">
+      <SEOHead
+        title="Terms of Sale - Barnal"
+        description="Terms of Sale for Barnal."
+        path="/barnal/terms-of-sale"
+      />
       <h1 id="特定商取引法に基づく表示">特定商取引法に基づく表示</h1>
       <h2 id="名称">名称</h2>
       <p>浅野 大輝（Hiroki Asano）</p>

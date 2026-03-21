@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function ZoshoTermsOfSale() {
   return (
     <LegalPageLayout appName="Zosho" backPath="/zosho">
+      <SEOHead
+        title="Terms of Sale - Zosho"
+        description="Terms of Sale for Zosho."
+        path="/zosho/terms-of-sale"
+      />
       <h1 id="特定商取引法に基づく表示">特定商取引法に基づく表示</h1>
       <h2 id="名称">名称</h2>
       <p>浅野 大輝（Hiroki Asano）</p>

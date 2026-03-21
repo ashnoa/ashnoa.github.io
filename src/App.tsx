@@ -1,4 +1,5 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "./context/ThemeContext";
 import { Header } from "./components/Header";
 import { ScrollToTop } from "./components/ScrollToTop";
@@ -25,8 +26,9 @@ import BarnalTermsOfSale from "./BarnalTermsOfSale";
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
+    <HelmetProvider>
+      <ThemeProvider>
+        <Router>
         <ScrollToTop />
         <div className="min-h-screen bg-background text-foreground">
           <Header />
@@ -82,8 +84,9 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-      </Router>
-    </ThemeProvider>
+        </Router>
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 

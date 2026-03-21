@@ -1,8 +1,14 @@
 import { LegalPageLayout } from "./components/LegalPageLayout";
+import { SEOHead } from "./components/SEOHead";
 
 function BarnalPrivacyPolicy() {
   return (
     <LegalPageLayout appName="Barnal" backPath="/barnal">
+      <SEOHead
+        title="Privacy Policy - Barnal"
+        description="Privacy Policy for Barnal."
+        path="/barnal/privacy-policy"
+      />
       <h1 id="プライバシーポリシー">プライバシーポリシー</h1>
       <p>
         Hiroki Asano（以下「当方」といいます。）は、当方が提供する「Barnal –
