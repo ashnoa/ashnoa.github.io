@@ -104,4 +104,24 @@ export const apps: App[] = [
     termsOfUsePath: "/barnal/terms-of-use",
     termsOfSalePath: "/barnal/terms-of-sale",
   },
+  {
+    id: "dia",
+    name: "dia",
+    icon: "/images/icon_dia.png",
+    tagline: "Guitar Chord Diagram",
+    description:
+      "An interactive app for creating, viewing, and listening to guitar chord diagrams. Explore 3,000+ preset voicings, hear chords with realistic audio, and learn music theory with visual interval labels.",
+    features: [
+      "3,000+ preset chord voicings",
+      "Interactive chord diagram editor",
+      "Realistic guitar audio playback",
+      "Music theory interval/degree display",
+      "Custom tuning support",
+      "Left-handed mode",
+    ],
+    tags: ["iOS", "Music", "Education"],
+    privacyPolicyPath: "/dia/privacy-policy",
+    termsOfUsePath: "/dia/terms-of-use",
+    termsOfSalePath: "/dia/terms-of-sale",
+  },
 ];

@@ -23,6 +23,9 @@ import CashCrewTermsOfSale from "./CashCrewTermsOfSale";
 import BarnalPrivacyPolicy from "./BarnalPrivacyPolicy";
 import BarnalTermsOfUse from "./BarnalTermsOfUse";
 import BarnalTermsOfSale from "./BarnalTermsOfSale";
+import DiaPrivacyPolicy from "./DiaPrivacyPolicy";
+import DiaTermsOfUse from "./DiaTermsOfUse";
+import DiaTermsOfSale from "./DiaTermsOfSale";
 
 function App() {
   return (
@@ -88,6 +91,12 @@ function App() {
                 path="/barnal/terms-of-sale"
                 element={<BarnalTermsOfSale />}
               />
+              <Route
+                path="/dia/privacy-policy"
+                element={<DiaPrivacyPolicy />}
+              />
+              <Route path="/dia/terms-of-use" element={<DiaTermsOfUse />} />
+              <Route path="/dia/terms-of-sale" element={<DiaTermsOfSale />} />
               {/* Dynamic app detail page */}
               <Route path="/:appId" element={<AppDetailPage />} />
               <Route path="*" element={<NotFound />} />
