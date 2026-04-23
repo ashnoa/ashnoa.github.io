@@ -2,139 +2,163 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ashnoa.com/</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/apps</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/about</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/olel</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/zosho</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/ontape</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/cashcrew</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/barnal</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ashnoa.com/dia</loc>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/olel/privacy-policy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/olel/terms-of-use</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/olel/terms-of-sale</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/zosho/privacy-policy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/zosho/terms-of-use</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/zosho/terms-of-sale</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/ontape/privacy-policy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/ontape/terms-of-use</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/ontape/terms-of-sale</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/cashcrew/privacy-policy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/cashcrew/terms-of-use</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/cashcrew/terms-of-sale</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/barnal/privacy-policy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/barnal/terms-of-use</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ashnoa.com/barnal/terms-of-sale</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ashnoa.com/dia/privacy-policy</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ashnoa.com/dia/terms-of-use</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ashnoa.com/dia/terms-of-sale</loc>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
