@@ -120,6 +120,7 @@ export const apps: App[] = [
       "Left-handed mode",
     ],
     tags: ["iOS", "Music", "Education"],
+    appStoreUrl: "https://apps.apple.com/us/app/dia-guitar-chord-diagram/id6762994532",
     privacyPolicyPath: "/dia/privacy-policy",
     termsOfUsePath: "/dia/terms-of-use",
     termsOfSalePath: "/dia/terms-of-sale",
